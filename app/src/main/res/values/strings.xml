@@ -2,10 +2,19 @@
     <string name="app_name">Tools Shop</string>
 
     <string name="description_logo">Логотип магазина инструментов</string>
+    <string name="description_image_logo_drill">Изображение логотипа дрели</string>
 
     <string-array name="tools">
         <item>Дрели</item>
         <item>Перфоратоты</item>
         <item>Болгарки</item>
     </string-array>
+
+    <string name="drill_interskol_title">Дрель Интерскол</string>
+    <string name="drill_makita_title">Дрель Makita</string>
+    <string name="drill_dewalt_title">Дрель DeWalt</string>
+
+    <string name="drill_iterskol_info">Авававава каквдолова дыолваоыдлова</string>
+    <string name="drill_makita_info">Одоалов вава ололв олволоа ловддыло лоадвоыл аваы</string>
+    <string name="drill_dewalt_info">Олоало ло ололо лдуло лодоылвоац</string>
 </resources>

@@ -3,6 +3,7 @@ package com.omelchenkoaleks.toolsshop;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -32,8 +33,12 @@ public class MainActivity extends AppCompatActivity {
         mToolsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(parent.getContext(),
-                        "Позиция: " + position, Toast.LENGTH_SHORT).show();
+                switch (position) {
+                    case 0:
+                        Intent intent = new Intent(getApplicationContext(), DrillCategoryActivity.class);
+                        startActivity(intent);
+                        break;
+                }
             }
         });
     }
