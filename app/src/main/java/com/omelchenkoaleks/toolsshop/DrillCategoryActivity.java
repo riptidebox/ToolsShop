@@ -1,5 +1,6 @@
 package com.omelchenkoaleks.toolsshop;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -41,7 +42,12 @@ public class DrillCategoryActivity extends AppCompatActivity {
         mDrillsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                Drill drill = mDrills.get(position);
+                Intent intent = new Intent(getApplicationContext(), DrillDetailActivity.class);
+                intent.putExtra("title", drill.getTitle());
+                intent.putExtra("info", drill.getInfo());
+                intent.putExtra("imageId", drill.getImageResourceId());
+                startActivity(intent);
             }
         });
     }
